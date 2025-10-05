@@ -1,0 +1,56 @@
+'use client';
+import Link from 'next/link';
+import { useState } from 'react';
+import { MdFilterList, MdClose } from 'react-icons/md';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <nav className="block lg:flex justify-between items-center border-2 border-slate-500 py-3 px-6 w-full">
+      <div className="logo-btn flex justify-between w-full lg:w-1/2">
+        <div className="logo flex items-center">
+          <h1 className="font-bold text-2xl">Online Shope</h1>
+        </div>
+        <div className="btn flex items-center lg:hidden">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? (
+              <MdClose className="size-8" />
+            ) : (
+              <MdFilterList className="size-8" />
+            )}
+          </button>
+        </div>
+      </div>
+      <div className="listMenu lg:flex">
+        <ul
+          className={`${
+            isOpen ? 'block' : 'hidden'
+          } text-center space-y-3 my-4 lg:space-y-0 lg:my-0 lg:flex lg:items-center lg:gap-12`}
+        >
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/">Products</Link>
+          </li>
+          <li>
+            <Link href="/">About Us</Link>
+          </li>
+          <li>
+            <Link href="/">Contact Us</Link>
+          </li>
+          <li className="mt-7 lg:mt-0">
+            <Link
+              href="/login"
+              className="bg-slate-700 border-2 rounded-md text-white text-center px-6 py-2 hover:bg-slate-900"
+            >
+              Login
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
