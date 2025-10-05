@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="block lg:flex justify-between items-center border-2 border-slate-500 py-3 px-6 w-full">
       <div className="logo-btn flex justify-between w-full lg:w-1/2">
         <div className="logo flex items-center">
-          <h1 className="font-bold text-2xl">Online Shope</h1>
+          <h1 className="font-bold text-2xl">Online Shop</h1>
         </div>
         <div className="btn flex items-center lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -41,7 +41,7 @@ const Navbar = () => {
           </li>
           <li className="mt-7 lg:mt-0">
             <Link
-              href="/login"
+              href="/auth/login"
               className="bg-slate-700 border-2 rounded-md text-white text-center px-6 py-2 hover:bg-slate-900"
             >
               Login

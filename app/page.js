@@ -1,7 +1,12 @@
+import Navbar from '@/components/Navbar';
+
 export default function Home() {
   return (
     <>
-      <h1>Halaman Utama</h1>
+      <Navbar />
+      <h1>Header</h1>
+      <h1>-------------</h1>
+      <h1>Main Content</h1>
     </>
   );
 }
