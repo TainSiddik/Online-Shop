@@ -1,0 +1,132 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+const Card = () => {
+  return (
+    <main>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-12">
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+          <div className="img">
+            <Image
+              src="/gambar1.png"
+              width={200}
+              height={120}
+              className="object-fill h-[120px] rounded-t-md"
+              alt="product"
+            />
+          </div>
+          <div className="decs mt-4 text-center">
+            <h1 className="font-semibold">Product Name</h1>
+            <h3 className="text-red-700 mt-2">Rp. 200.000</h3>
+          </div>
+          <div className="order mt-6 text-center">
+            <Link
+              href="/detail"
+              className="bg-slate-700 text-white py-2 text-center px-6 rounded-md"
+            >
+              Order Now
+            </Link>
+          </div>
+        </div>
+
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+          <div className="img">
+            <Image
+              src="/gambar2.png"
+              width={200}
+              height={120}
+              className="object-fill h-[120px] rounded-t-md"
+              alt="product"
+            />
+          </div>
+          <div className="decs mt-4 text-center">
+            <h1 className="font-semibold">Product Name</h1>
+            <h3 className="text-red-700 mt-2">Rp. 200.000</h3>
+          </div>
+          <div className="order mt-6 text-center">
+            <Link
+              href="/detail"
+              className="bg-slate-700 text-white py-2 text-center px-6 rounded-md"
+            >
+              Order Now
+            </Link>
+          </div>
+        </div>
+
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+          <div className="img">
+            <Image
+              src="/gambar3.png"
+              width={200}
+              height={120}
+              className="object-fill h-[120px] rounded-t-md"
+              alt="product"
+            />
+          </div>
+          <div className="decs mt-4 text-center">
+            <h1 className="font-semibold">Product Name</h1>
+            <h3 className="text-red-700 mt-2">Rp. 200.000</h3>
+          </div>
+          <div className="order mt-6 text-center">
+            <Link
+              href="/detail"
+              className="bg-slate-700 text-white py-2 text-center px-6 rounded-md"
+            >
+              Order Now
+            </Link>
+          </div>
+        </div>
+
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+          <div className="img">
+            <Image
+              src="/gambar4.png"
+              width={200}
+              height={120}
+              className="object-fill h-[120px] rounded-t-md"
+              alt="product"
+            />
+          </div>
+          <div className="decs mt-4 text-center">
+            <h1 className="font-semibold">Product Name</h1>
+            <h3 className="text-red-700 mt-2">Rp. 200.000</h3>
+          </div>
+          <div className="order mt-6 text-center">
+            <Link
+              href="/detail"
+              className="bg-slate-700 text-white py-2 text-center px-6 rounded-md"
+            >
+              Order Now
+            </Link>
+          </div>
+        </div>
+
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+          <div className="img">
+            <Image
+              src="/gambar5.png"
+              width={200}
+              height={120}
+              className="object-fill h-[120px] rounded-t-md"
+              alt="product"
+            />
+          </div>
+          <div className="decs mt-4 text-center">
+            <h1 className="font-semibold">Product Name</h1>
+            <h3 className="text-red-700 mt-2">Rp. 200.000</h3>
+          </div>
+          <div className="order mt-6 text-center">
+            <Link
+              href="/detail"
+              className="bg-slate-700 text-white py-2 text-center px-6 rounded-md"
+            >
+              Order Now
+            </Link>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Card;

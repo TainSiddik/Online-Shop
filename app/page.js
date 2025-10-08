@@ -1,12 +1,18 @@
 import Navbar from '@/components/Navbar';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Card from '@/components/Card';
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <h1>Header</h1>
-      <h1>-------------</h1>
-      <h1>Main Content</h1>
+      <Header />
+      <h1 className="font-bold text-4xl text-center text-slate-700 my-12">
+        Flagship Products
+      </h1>
+      <Card />
+      <Footer />
     </>
   );
 }

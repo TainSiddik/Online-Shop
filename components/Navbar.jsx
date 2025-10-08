@@ -1,21 +1,21 @@
-"use client";
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import { MdFilterList, MdClose } from "react-icons/md";
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
+import { MdFilterList, MdClose } from 'react-icons/md';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="block lg:flex justify-between items-center border border-slate-500 py-1 px-6 w-full lg:py-3">
+    <nav className="block sticky top-0 z-50 bg-white lg:flex justify-between items-center border border-slate-500 py-1 px-6 w-full lg:py-2">
       <div className="logo-btn flex justify-between w-full lg:w-1/2">
         <div className="logo flex items-center">
           <Image
-            src="/logo.webp"
-            width={46}
-            height={46}
+            src="/logo.png"
+            width={111}
+            height={111}
             alt="logo"
-            className="lg:w-16 lg:h-16"
+            className="lg:w-[120px] lg:h-[80px] object-fill"
           />
         </div>
         <div className="btn flex items-center lg:hidden">
@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="listMenu lg:flex">
         <ul
           className={`${
-            isOpen ? "block" : "hidden"
+            isOpen ? 'block' : 'hidden'
           } text-center space-y-3 my-4 lg:space-y-0 lg:my-0 lg:flex lg:items-center lg:gap-12`}
         >
           <li>
