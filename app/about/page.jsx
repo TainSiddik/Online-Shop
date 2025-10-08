@@ -1,12 +1,12 @@
-import Footer from "@/components/Footer";
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import Footer from '@/components/Footer';
+import Image from 'next/image';
+import Navbar from '@/components/Navbar';
 
 const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <div className="about bg-slate-300 lg:flex lg:justify-between lg:items-center">
+      <div className="about bg-slate-200 lg:flex lg:justify-between lg:items-center">
         <div className="structur">
           <Image
             src="/structur.webp"
