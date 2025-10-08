@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Card = () => {
   return (
     <main>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-12">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-12 mb-12">
         <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
           <div className="img">
             <Image

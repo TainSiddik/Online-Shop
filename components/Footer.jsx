@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer>
-      <div className="footer bg-slate-300 mt-12 px-6 py-1 flex items-center">
+      <div className="footer bg-slate-300 px-6 py-1 flex items-center">
         <div className="logo mx-auto">
           <Image src="/logo.png" width={150} height={100} alt="logo" />
         </div>
