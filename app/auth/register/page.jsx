@@ -29,13 +29,13 @@ function RegisterPage() {
           </div>
           <div className="phone mt-3">
             <label htmlFor="phone" className="font-semibold text-lg">
-              phone
+              Phone
             </label>
             <input
               type="text"
               id="phone"
               className="w-full border-2 border-slate-700 px-4 py-2 mt-2 rounded-full focus:outline-none"
-              placeholder="example@gmail.com"
+              placeholder="0823-4567-8910"
             />
           </div>
           <div className="password mt-3">
