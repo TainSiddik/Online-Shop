@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function RegisterPage() {
   return (
-    <div className="login h-screen bg-slate-700 flex justify-center items-center">
+    <div className="login bg-slate-700 flex justify-center items-center py-6">
       <div className="form w-72 bg-white rounded-md px-6 py-6">
         <form action="">
           <div className="name">
