@@ -5,7 +5,10 @@ const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <div className="contact w-full px-12 my-14">
+      <div className="contact w-full px-12 mt-8 mb-14">
+        <h1 className="font-semibold text-2xl lg:text-4xl mb-6 text-slate-500">
+          Contact Us
+        </h1>
         <div className="form ">
           <form action="">
             <div className="name">
