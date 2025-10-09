@@ -5,7 +5,18 @@ function RegisterPage() {
     <div className="login h-screen bg-slate-700 flex justify-center items-center">
       <div className="form w-72 bg-white rounded-md px-6 py-6">
         <form action="">
-          <div className="email">
+          <div className="name">
+            <label htmlFor="name" className="font-semibold text-lg">
+              Full Name
+            </label>
+            <input
+              type="name"
+              id="name"
+              className="w-full border-2 border-slate-700 px-4 py-2 mt-2 rounded-full focus:outline-none"
+              placeholder="Full Name"
+            />
+          </div>
+          <div className="email mt-3">
             <label htmlFor="email" className="font-semibold text-lg">
               Email
             </label>
