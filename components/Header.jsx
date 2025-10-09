@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -29,7 +29,7 @@ const Header = () => {
               Products
             </Link>
             <Link
-              href="/products"
+              href="/contact"
               className="bg-white font-semibold text-slate-700 rounded-md px-6 py-2"
             >
               Contact Us

@@ -1,8 +1,8 @@
-"use client";
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import { MdFilterList, MdClose } from "react-icons/md";
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
+import { MdFilterList, MdClose } from 'react-icons/md';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,20 +31,40 @@ const Navbar = () => {
       <div className="listMenu lg:flex">
         <ul
           className={`${
-            isOpen ? "block" : "hidden"
+            isOpen ? 'block' : 'hidden'
           } text-center space-y-3 my-4 lg:space-y-0 lg:my-0 lg:flex lg:items-center lg:gap-12`}
         >
           <li>
-            <Link href="/">Home</Link>
+            <Link
+              href="/"
+              className="block w-full py-1 active:bg-slate-300 lg:active:bg-white lg:hover:text-indigo-300 rounded-md"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/">Products</Link>
+            <Link
+              href="/products"
+              className="block w-full py-1 active:bg-slate-300 lg:active:bg-white lg:hover:text-indigo-300 rounded-md"
+            >
+              Products
+            </Link>
           </li>
           <li>
-            <Link href="/about">About Us</Link>
+            <Link
+              href="/about"
+              className="block w-full py-1 active:bg-slate-300 lg:active:bg-white lg:hover:text-indigo-300 rounded-md"
+            >
+              About Us
+            </Link>
           </li>
           <li>
-            <Link href="/">Contact Us</Link>
+            <Link
+              href="/contact"
+              className="block w-full py-1 active:bg-slate-300 lg:active:bg-white lg:hover:text-indigo-300 rounded-md"
+            >
+              Contact Us
+            </Link>
           </li>
           <li className="mt-7 lg:mt-0">
             <Link

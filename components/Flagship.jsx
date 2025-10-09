@@ -104,7 +104,7 @@ const Flagship = () => {
           </div>
         </div>
 
-        <div className="card w-[145px] md:w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto my-1">
+        <div className="card w-[145px] md:w-[200px] h-[285px] ring-2 ring-slate-500 rounded-md mx-auto my-1">
           <div className="img">
             <Image
               src="/gambar5.png"
