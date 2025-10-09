@@ -1,8 +1,8 @@
-'use client';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import { MdFilterList, MdClose } from 'react-icons/md';
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import { MdFilterList, MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +12,8 @@ const Navbar = () => {
         <div className="logo flex items-center">
           <Image
             src="/logo.png"
-            width={111}
-            height={111}
+            width={80}
+            height={80}
             alt="logo"
             className="lg:w-[120px] lg:h-[80px] object-fill"
           />
@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="listMenu lg:flex">
         <ul
           className={`${
-            isOpen ? 'block' : 'hidden'
+            isOpen ? "block" : "hidden"
           } text-center space-y-3 my-4 lg:space-y-0 lg:my-0 lg:flex lg:items-center lg:gap-12`}
         >
           <li>

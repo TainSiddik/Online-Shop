@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const Card = () => {
   return (
     <main>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-12 mb-12">
-        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-6 lg:mx-12 lg:mb-12">
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto my-4">
           <div className="img">
             <Image
               src="/gambar1.png"
@@ -29,7 +29,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto my-4">
           <div className="img">
             <Image
               src="/gambar2.png"
@@ -53,7 +53,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto my-4">
           <div className="img">
             <Image
               src="/gambar3.png"
@@ -77,7 +77,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto my-4">
           <div className="img">
             <Image
               src="/gambar4.png"
@@ -101,7 +101,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto">
+        <div className="card w-[200px] h-[260px] ring-2 ring-slate-500 rounded-md mx-auto my-4">
           <div className="img">
             <Image
               src="/gambar5.png"
