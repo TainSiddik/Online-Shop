@@ -7,12 +7,12 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer bg-slate-300 px-6 py-1 flex items-center">
+      <div className="footer bg-slate-300 px-1 lg:px-6 py-1 flex items-center">
         <div className="logo mx-auto">
           <Image src="/logo.png" width={80} height={80} alt="logo" />
         </div>
         <div className="contact mx-auto text-slate-700 mt-4">
-          <div className="icon flex justify-center gap-6 lg:gap-12">
+          <div className="icon flex justify-center gap-2 lg:gap-12">
             <Link href="/">
               <MdOutlineWhatsapp />
             </Link>
@@ -27,7 +27,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="menu mt-2 mb-2 lg:mt-4">
-            <ul className="flex space-x-6 text-sm lg:space-x-12 text-slate-700">
+            <ul className="flex space-x-2 text-sm lg:space-x-12 text-slate-700">
               <li>
                 <Link href="/">Home</Link>
               </li>
